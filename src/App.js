@@ -15,18 +15,18 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/page-cclean">
         <Navigation />
         {/* Main content with left margin on desktop to account for sidebar */}
         <main className="min-h-screen lg:ml-[250px]">
           <Routes>
-            <Route path="/page-cclean/" element={<Home />} />
-            <Route path="/page-cclean/quem-somos" element={<About />} />
-            <Route path="/page-cclean/visao-valores" element={<Vision />} />
-            <Route path="/page-cclean/diaristas" element={<Diaristas />} />
-            <Route path="/page-cclean/mensalistas" element={<Mensalistas />} />
-            <Route path="/page-cclean/avaliacao" element={<Avaliacao />} />
-            <Route path="/page-cclean/contato" element={<Contato />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/quem-somos" element={<About />} />
+            <Route path="/visao-valores" element={<Vision />} />
+            <Route path="/diaristas" element={<Diaristas />} />
+            <Route path="/mensalistas" element={<Mensalistas />} />
+            <Route path="/avaliacao" element={<Avaliacao />} />
+            <Route path="/contato" element={<Contato />} />
           </Routes>
         </main>
         {/* Footer also with left margin on desktop */}
